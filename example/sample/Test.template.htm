@@ -1,0 +1,22 @@
+namespace FuseChat.Members
+
+<div var-controller="Members as members" class="members">
+    <div class="header">
+        <span var-handle="hCount" var-events="click:incrementValue,dblclick:decrementValue">0 online</span>
+    </div>
+    <div class="content">
+        <div var-repeat="members:object(id)" var-controller="Member" var-events="click:selectMember,dblclick:openMember" class="member animated bounceInRight">
+            <div class="header">
+                <img var-handle="hFlag" var-events="load:showFlag" class="flag" style="display: none;"/>
+                <span var-handle="hNick" class="nick">Nick</span>
+                <!--
+				<span var-handle="hAge" class="age" style="display: none;">0</span>
+                <span var-handle="hGender" class="gender">M/F/O</span>
+                <span var-handle="hCountry" class="country">Unknown</span>
+				-->
+            </div>
+            <div var-handle="hDetails"></div>
+        </div>
+    </div>
+</div>
+

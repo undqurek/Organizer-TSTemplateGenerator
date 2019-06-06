@@ -1,0 +1,1 @@
+Genrerates *Template.ts files for *.template.htm files.
